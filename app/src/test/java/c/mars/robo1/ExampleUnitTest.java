@@ -40,4 +40,9 @@ public class ExampleUnitTest {
         Intent expectedIntent = new Intent(activity, NewActivity.class);
         assertThat(Shadows.shadowOf(activity).getNextStartedActivity(), is(equalTo(expectedIntent)));
     }
+
+    @Test
+    public void failTest(){
+        assertFalse(true);
+    }
 }
